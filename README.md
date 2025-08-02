@@ -45,13 +45,32 @@ ollama pull mistral
 ## ▶️ Usage
 
 1. Place your resume PDFs in the `./resumes/` directory.
-2. Run the parser:
+2. Place OpenAI API key in .env file.
+4. Run the parser:
 
 ```bash
 python parser.py
 ```
 
-3. Extracted JSON files will be saved in the `./output/` folder.
+4. Extracted JSON files will be saved in the `./output/` folder.
+
+---
+
+## 🔑 Getting an OpenAI API Key
+
+To use this project, you'll need an OpenAI API key. Here's how to get one:
+
+1. Go to [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys).
+2. Sign in or create a free OpenAI account.
+3. Click **"Create new secret key"**.
+4. Copy the generated key — **you won’t be able to view it again later!**
+
+Once you have your key, add it to your environment variables or config file:
+
+```bash
+# Example (in a .env file)
+OPENAI_API_KEY=your-secret-key-here
+
 
 ---
 
@@ -135,5 +154,6 @@ We welcome contributions!
 
 - Open issues or suggest improvements via GitHub Issues
 - Submit pull requests for additional field adapters (e.g., legal, education, creative writing)
+
 
 
